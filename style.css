@@ -4,6 +4,24 @@ nav {
 }
 nav .navbar-brand {
   font-size: 2rem;
+  color: #00b4d8;
+  transition: 0.2s;
+}
+nav .navbar-brand:hover {
+  color: #00b4d8;
+  transform: scale(1.1);
+}
+nav .nav-link {
+  color: #00b4d8;
+  transition: 0.2s;
+}
+nav .nav-link:hover {
+  color: #00b4d8;
+  transform: scale(1.1);
+}
+nav #navbarNav {
+  margin-left: 5vw;
+  justify-content: space-between;
 }
 
 #CalltoAction {
@@ -200,8 +218,8 @@ nav .navbar-brand {
     font-size: 3rem;
   }
   #About .Description .normal {
-    font-size: 2rem;
-    line-height: 3.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
   }
 }
 
