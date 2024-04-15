@@ -1,0 +1,77 @@
+
+#CalltoAction {
+    height: 90vh;
+    width: 100vw;
+    position: relative; /* 添加相对定位 */
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./pics/CallAction.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -1; /* 将此元素放在底层 */
+}
+.Title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    z-index: 1;
+    margin-left: 10vw;
+    .h1{
+        font-size: 7rem;
+        color: white;
+        margin: 0;
+    }
+    p{
+        font-size: 2rem;
+        color: white;
+        margin: 0;
+    }
+}
+#Slogan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#OurGoal{
+    margin-top: 10vh;
+    .Description{
+        animation: fly-in 1s ease-in;
+    }
+    @keyframes fly-in {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 30vw;
+        }
+        .Description{
+            width: 40vw;
+        }
+    }
+}
+#AboutPTWA{
+    padding: 2vw 2vh;
+    width: 100vw;
+    img{
+        height: 50vh;
+    }
+}
+
+
