@@ -1,3 +1,10 @@
+nav{
+    min-height: 10vh;
+    font-size: 1.2rem;
+    .navbar-brand{
+        font-size: 2rem;
+    }
+}
 
 #CalltoAction {
     height: 100vh;
@@ -18,14 +25,14 @@
         flex-direction: column;
         justify-content: space-evenly;
         height: 20vh;
-        @media screen and (max-width: 768px){
+        @media (max-width: 768px){
             height: 10vh;
         }
         .h1{
             font-size: 5rem;
             color: white;
             margin: 0;
-            @media screen and (max-width: 768px){
+            @media (max-width: 768px){
                 font-size: 3rem;
             }
         }
@@ -66,14 +73,13 @@
     p{
         color: white;
         font-size: 6rem;
-        @media screen and (max-width: 992px){
+        @media (max-width: 992px){
             font-size: 5rem;
         }
-        @media screen and (max-width: 768px){
+        @media(max-width: 768px){
             font-size: 5rem;
         }
-
-        @media screen and (max-width: 576px){
+        @media (max-width: 576px){
             font-size: 2rem;
         }
     }
@@ -89,6 +95,9 @@
         margin: 2rem 0;
     };
     .Description{
+        @media (max-width: 992px){
+            margin-top: 2rem;
+        }
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -123,8 +132,8 @@
     }
 }
 #Product{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 2rem;
+    
     .ImgFrame{
         margin: 1rem auto;
         display: flex;
@@ -155,7 +164,7 @@
 #About{
     height: 100vh;
     background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1)), url(./pics/CallAction.png);
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 992px){
         background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,1)), url(./pics/CallAction.png);
     }
     // background-image: url(./pics/CallAction.png);
@@ -173,12 +182,21 @@
         color: white;
         margin-left: 10vw;
         margin-right: 10vw;
-        @media screen and (max-width: 576px){
-            margin-right: 0;    
+        @media screen and (max-width: 992px){
+            .h1{
+                font-size: 3rem;
+            }
+            .normal{
+                font-size: 2rem;
+                line-height: 3.5rem;
+            }
         }
         z-index: 1;
         line-height: 2rem;
     }
 
+}
+img{
+    border-radius: 20px;
 }
 
