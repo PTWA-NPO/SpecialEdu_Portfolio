@@ -1,17 +1,38 @@
 @charset "UTF-8";
 #CalltoAction {
-  height: 90vh;
+  height: 100vh;
+  width: 100vw;
   position: relative; /* 添加相对定位 */
   z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(./pics/CallAction.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./pics/head.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  z-index: -1; /* 将此元素放在底层 */
+}
+#CalltoAction .Description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20vh;
+}
+@media screen and (max-width: 576px) {
+  #CalltoAction .Description {
+    height: 10vh;
+  }
+}
+#CalltoAction .Description .h1 {
+  font-size: 5rem;
+  color: white;
+  margin: 0;
+}
+@media screen and (max-width: 576px) {
+  #CalltoAction .Description .h1 {
+    font-size: 3rem;
+  }
 }
 
 .Title {
@@ -32,12 +53,52 @@
   margin: 0;
 }
 
-#Slogan {
+#FullPageSlogan {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./pics/PlaneIntro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#FullPageSlogan p {
+  color: white;
+  font-size: 7rem;
+}
+@media screen and (max-width: 992px) {
+  #FullPageSlogan p {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #FullPageSlogan p {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #FullPageSlogan p {
+    font-size: 2rem;
+  }
+}
+
+#Slogan {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(115deg, #F00 50%, url(./pics/PlaneIntro.jpg) 50%);
+}
+#Slogan .row {
+  margin: 2rem 0;
+}
+#Slogan .Description {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 #OurGoal {
@@ -69,10 +130,61 @@
   width: 40vw;
 }
 
-#AboutPTWA {
-  padding: 2vw 2vh;
+#Product {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+#Product .ImgFrame {
+  margin: 1rem auto;
+  display: flex;
+  align-self: stretch;
+}
+#Product .ImgFrame img {
+  border-radius: 12px;
+  border: solid 1px #aaa;
+}
+
+#Goal {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   width: 100vw;
 }
-#AboutPTWA img {
-  height: 50vh;
+#Goal .Img {
+  display: flex;
+  align-self: center;
+}
+#Goal .Description {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#About {
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(./pics/CallAction.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  z-index: 0;
+}
+@media screen and (max-width: 576px) {
+  #About {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url(./pics/CallAction.png);
+  }
+}
+#About .Description {
+  color: white;
+  margin-right: 10vw;
+  z-index: 1;
+  line-height: 2rem;
+}
+@media screen and (max-width: 576px) {
+  #About .Description {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
