@@ -1,4 +1,7 @@
 nav{
+    display: flex;
+    justify-content: space-evenly !important;
+    flex-wrap: nowrap;
     font-size: 1.2rem;
     .navbar-brand{
         font-size: 2rem;
@@ -31,7 +34,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./pics/head.jpg);
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./pics/Pic-2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -74,22 +77,22 @@ nav{
 }
 #FullPageSlogan{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./pics/PlaneIntro.jpg);
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./pics/Pic-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    p{
+    .h1{
         color: white;
-        font-size: 6rem;
+        font-size: 7rem;
         @media (max-width: 992px){
-            font-size: 5rem;
+            font-size: 6rem;
         }
         @media(max-width: 768px){
-            font-size: 5rem;
+            font-size: 6rem;
         }
         @media (max-width: 576px){
             font-size: 2rem;
@@ -145,17 +148,28 @@ nav{
 }
 #Product{
     margin-top: 2rem;
-    
-    .ImgFrame{
-        margin: 1rem auto;
+    .container{
         display: flex;
-        align-self: stretch;
-        img{
-            border-radius: 12px;
-            border: solid 1px #aaa;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Items{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            // justify-content: space-around;
+            align-items: stretch;
+            .card{
+                margin-top: 2rem;
+                height: 100%;
+                border-radius: 20px;
+                img{
+                    padding: 2rem;
+                }
+            }
         }
     }
-
+    
 }
 #Goal{
     margin-top: 10vh;
@@ -175,9 +189,9 @@ nav{
 
 #About{
     height: 100vh;
-    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1)), url(./pics/CallAction.png);
+    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(./pics/Pic-4.jpg);
     @media screen and (max-width: 992px){
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,1)), url(./pics/CallAction.png);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,1)), url(./pics/Pic-4.jpg);
     }
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -192,11 +206,15 @@ nav{
         color: white;
         margin-left: 10vw;
         margin-right: 10vw;
-        @media screen and (max-width: 992px){
-            .h1{
+        .h1{
+            font-size: 5rem;
+            @media screen and (max-width: 992px){
                 font-size: 3rem;
             }
-            .normal{
+        }
+        .normal{
+            font-size: 1.3rem;
+            @media screen and (max-width: 992px){
                 font-size: 1rem;
                 line-height: 2rem;
             }

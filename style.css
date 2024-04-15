@@ -1,5 +1,8 @@
 @charset "UTF-8";
 nav {
+  display: flex;
+  justify-content: space-evenly !important;
+  flex-wrap: nowrap;
   font-size: 1.2rem;
 }
 nav .navbar-brand {
@@ -32,7 +35,7 @@ nav #navbarNav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./pics/head.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./pics/Pic-2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -80,31 +83,31 @@ nav #navbarNav {
 
 #FullPageSlogan {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./pics/PlaneIntro.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./pics/Pic-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-#FullPageSlogan p {
+#FullPageSlogan .h1 {
   color: white;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 @media (max-width: 992px) {
-  #FullPageSlogan p {
-    font-size: 5rem;
+  #FullPageSlogan .h1 {
+    font-size: 6rem;
   }
 }
 @media (max-width: 768px) {
-  #FullPageSlogan p {
-    font-size: 5rem;
+  #FullPageSlogan .h1 {
+    font-size: 6rem;
   }
 }
 @media (max-width: 576px) {
-  #FullPageSlogan p {
+  #FullPageSlogan .h1 {
     font-size: 2rem;
   }
 }
@@ -163,14 +166,25 @@ nav #navbarNav {
 #Product {
   margin-top: 2rem;
 }
-#Product .ImgFrame {
-  margin: 1rem auto;
+#Product .container {
   display: flex;
-  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#Product .ImgFrame img {
-  border-radius: 12px;
-  border: solid 1px #aaa;
+#Product .container .Items {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+#Product .container .Items .card {
+  margin-top: 2rem;
+  height: 100%;
+  border-radius: 20px;
+}
+#Product .container .Items .card img {
+  padding: 2rem;
 }
 
 #Goal {
@@ -190,7 +204,7 @@ nav #navbarNav {
 
 #About {
   height: 100vh;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(./pics/CallAction.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(./pics/Pic-4.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -203,7 +217,7 @@ nav #navbarNav {
 }
 @media screen and (max-width: 992px) {
   #About {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url(./pics/CallAction.png);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url(./pics/Pic-4.jpg);
   }
 }
 #About .Description {
@@ -213,10 +227,18 @@ nav #navbarNav {
   z-index: 1;
   line-height: 2rem;
 }
+#About .Description .h1 {
+  font-size: 5rem;
+}
 @media screen and (max-width: 992px) {
   #About .Description .h1 {
     font-size: 3rem;
   }
+}
+#About .Description .normal {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 992px) {
   #About .Description .normal {
     font-size: 1rem;
     line-height: 2rem;
