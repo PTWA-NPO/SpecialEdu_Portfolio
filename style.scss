@@ -18,14 +18,14 @@
         flex-direction: column;
         justify-content: space-evenly;
         height: 20vh;
-        @media screen and (max-width: 576px){
+        @media screen and (max-width: 768px){
             height: 10vh;
         }
         .h1{
             font-size: 5rem;
             color: white;
             margin: 0;
-            @media screen and (max-width: 576px){
+            @media screen and (max-width: 768px){
                 font-size: 3rem;
             }
         }
@@ -65,12 +65,12 @@
     background-size: cover;
     p{
         color: white;
-        font-size: 7rem;
+        font-size: 6rem;
         @media screen and (max-width: 992px){
             font-size: 5rem;
         }
         @media screen and (max-width: 768px){
-            font-size: 3rem;
+            font-size: 5rem;
         }
 
         @media screen and (max-width: 576px){
@@ -171,6 +171,7 @@
     z-index: 0;
     .Description{
         color: white;
+        margin-left: 10vw;
         margin-right: 10vw;
         @media screen and (max-width: 576px){
             margin-right: 0;    
